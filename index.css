@@ -1,0 +1,39 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: indianred;
+}
+
+.container {
+    background-color: darkkhaki;
+    max-width: 1500px;
+    min-width: 300px;
+    padding: 5px;
+}
+
+.card {
+    margin: 5px;
+    max-width: 625px;
+    min-width: 370px;
+}
+
+.button {
+    margin: auto;
+    padding: 1px;
+}
+#header {
+    margin-left: auto;
+    margin-right: auto;
+}
+#portrait {
+    margin: auto;
+    padding: 0px;
+}
+#collab_card {
+    margin: auto;
+    padding: 1px;
+}
