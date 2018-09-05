@@ -1,0 +1,8 @@
+.container{
+    max-width: 1600px;
+}
+
+.pictos{
+    display: flex;
+    justify-content: space-between;
+}
