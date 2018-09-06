@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-
+	scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<title> Bootsrap </title>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">B00tsr4p</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Collaborateur</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Statistiques</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Activités</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<h1>Les collaborateurs</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<button type="button"  class="float-right btn btn-light shadow p-1 mb-1 bg-white rounded" >Ajouter un nouveau collaborateur</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 text-right" >
+				<p>Rechercher un nom ou un prénom commençant par : </p>
+			</div>
+			<div class="col-4" >
+				<input type="text" name="nom">
+				<input type="submit" value="Rechercher" name="Rechercher" class="btn btn-light shadow p-1 mb-1 bg-white rounded">
+			</div>
+			<div class="col-4" >
+				<div class="custom-control custom-checkbox">
+				  <input type="checkbox" class="custom-control-input" id="customCheck1">
+				  <label class="custom-control-label" for="customCheck1">Voir les collaborateurs désactivés</label>
+				</div>				
+	    	</div>
+	    </div>
+		<div class="row">
+			<div class="col-4 text-right" >
+				<p>Filtrer par département : </p>		
+			</div>
+			<div class="col-4" >
+				<select>
+			        <optgroup label="filtrer">
+			            <option value="Tous">Tous</option>
+			            <option value="Comptabilite">Comptabilité</option>
+			            <option value="RessourcesHumaines">Ressources Humaines</option>
+			            <option value="Informatique">Informatique</option>      
+			        </optgroup>
+		    	</select>
+		    </div>			
+		</div>	    	
+		
+		<div class="row">
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction</p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded ">
+						</div>
+					</div>					
+				</div>
+			</div>				
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction</p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction</p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction</p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction </p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded" value="Editer">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-4 ">
+				<div class="cards" >
+					<h5>NOM Prénom</h5>
+					
+					<div class="col centreVerticalement">	
+						<div class="img">
+							<img class="card-img " src=".../200px200/" alt="Card image">
+						</div>
+					</div>	
+				
+					<div class="col centreVerticalement">	
+						<div class="card-body text-right">
+					    	<p class="card-infos">Fonction</p>
+							<p class="card-infos">Département</p>
+							<p class="card-infos">Email</p>
+							<p class="card-infos">Téléphone</p>
+							<input type="submit" value="Editer" name="Editer" class="btn btn-light shadow p-1 mb-1 bg-white rounded" value="Editer">
+						</div>
+					</div>					
+				</div>
+			</div>			
+		</div>			
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
