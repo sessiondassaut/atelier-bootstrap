@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
+    <title>Index TP Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../src/index.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Collaborateurs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="statistiques.html">Statistique</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Activités</a>
+            </li>
+            </ul>
+        </div>  
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-7">
+                <h2>Nom - Prenom Matricule</h2>
+                <input type="checkbox" name="Desactivé" id="desactive">Desactivé
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img class="img-fluid" src="data:image/png;base64,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" alt="test">       
+            </div>
+            <div class="col-8">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Identité
+                            </button>
+                        </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <form action="" class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomcivilite">Civilité</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <select name="civilite" id="civilite" class="form-control">
+                                                <option value="mr">Mr.</option>
+                                                <option value="mme">Mme.</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomIdentiteNom">Nom</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" name="nom" id="validationCustomIdentiteNom" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomPrenom">Nom</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" name="prenom" id="validationCustomPrenom" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomDateNaissance">Date de Naissance</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="date" name="datenaissance" id="validationCustomDateNaissance" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomAdresse">Adresse</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <textarea name="adresse" id="validationCustomAdresse" cols="26" rows="5" class="form-control"></textarea>
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomNumSS">N° de Securité Sociale</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="number" name="numerosecu" id="validationCustomNumSS" max="999999999999999" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-5">
+                                                <label for="validationCustomNumTel">N° de Telephone</label>
+                                            </div>
+                                            <div class="col-7">
+                                                <input type="number" name="numerotel" id="validationCustomNumTel" max="9999999999" class="form-control">
+                                                <div class="invalid-feedback">
+                                                    Il manque quelque chose non ?
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Poste
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <form action="" class="">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomDepartement">Departement</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <select name="department" id="validationCustomDepartement" class="form-control">
+                                                <option value="rh">Ressources Humaine</option>
+                                                <option value="info">Informatique</option>
+                                                <option value="compta">Comptabilité</option>                                                        
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomPosteNom">Nom</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" name="nom" id="validationCustomPosteNom" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Coordonnées Bancaires
+                            </button>
+                        </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <form action="" class="">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomIban">IBAN</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" name="iban" id="iban" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <label for="validationCustomBic">BIC</label>
+                                        </div>
+                                        <div class="col-7">
+                                            <input type="text" name="bic" id="validationCustomBic" class="form-control">
+                                            <div class="invalid-feedback">
+                                                Il manque quelque chose non ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html"><button class="btn btn-primary" type="submit">Sauvegarder</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
+    <title>New Collab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../src/index.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Collaborateurs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="statistiques.html">Statistique</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Activités</a>
+            </li>
+            </ul>
+        </div>  
+    </nav>
+    
+    <div class="container-fluid">
+        <h2>Création d'un collaborateur</h2>
+    <form class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-6">
+                <label for="validationCustom01">Nom</label>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nom" value="Mark" required>
+                <div class="valid-feedback">
+                    C'est bien noté
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="validationCustom02">Prenom</label>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Prenom" value="Henry" required>
+                <div class="valid-feedback">
+                    C'est bien noté
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="validationCustom03">Date de naissance : </label>
+            </div>
+            <div class="col-6">
+                <input type="date" class="form-control" id="validationCustom03" placeholder="Date de naissance" value="26/01/1994" required>
+                <div class="invalid-feedback">
+                    Il manque quelque chose non ?
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-6">
+                <label for="validationCustom04">Adresse : </label>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Adresse" value="" required>
+                <div class="invalid-feedback">
+                    Il manque quelque chose non ?
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-6">
+                    <label for="validationCustom05">N° de Securité Sociale : </label>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="n° de Securité Sociale" value="" required>
+                    <div class="invalid-feedback">
+                        Il manque quelque chose non ?
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#ajoutCollaborateur">Ajouter collaborateur</button>
+    </form>
+    <div class="modal fade" id="ajoutCollaborateur" tabindex="-1" role="dialog" aria-labelledby="ajoutCollaborateurTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ajoutCollaborateurLongTitle">Création d'un collaborateur</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>
+                    Vous êtes sur le point de créer un nouveau collaborateur
+                </h4>
+                <div class="row">
+                    <div class="col-4">
+                        <label>Nom : </label> 
+                    </div>
+                    <div class="col-7">
+                        <label>Nom du collaborateur</label> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label>Prenom : </label> 
+                    </div>
+                    <div class="col-7">
+                        <label>Prenom du collaborateur</label> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label>Date de naissance : </label> 
+                    </div>
+                    <div class="col-7">
+                        <label>Date de naissance du collaborateur</label> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label>Adresse : </label> 
+                    </div>
+                    <div class="col-7">
+                        <label>Adresse du collaborateur</label> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label>N° de Securité Sociale : </label> 
+                    </div>
+                    <div class="col-7">
+                        <label>N° de Securité Sociale du collaborateur</label> 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary">Confirmer</button>
+            </div>
+            </div>
+        </div>
+    </div>
+              
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
