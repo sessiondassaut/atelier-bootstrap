@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <style>
+            .justify-content-center
+            {
+                margin: 20px;
+            }
+
+            .help-block
+            {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Collaborateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/statistiques.html">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Activité</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br/>
+        <div class="container col-md-12">
+
+            <div class="col-md-2 ml-auto">
+                <a class="btn btn-secondary" href="/creer-collab.html">
+                    Ajouter un nouveau collaborateur
+                </a>
+            </div>
+            <h1>Statistiques</h1>
+
+            <br/>
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead class="thead-dark ">
+                        <tr>
+                            <th scope="col">Chemin</th>
+                            <th scope="col">Nombre de visite</th>
+                            <th scope="col">Min(ms)</th>
+                            <th scope="col">Max(ms)</th>
+                            <th scope="col">Moyenne(ms)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">/collaborateur/editer</th>
+                            <td>500</td>
+                            <td>10</td>
+                            <td>1000</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/collaborateur/lister</th>
+                            <td>200</td>
+                            <td>5</td>
+                            <td>300</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/collaborateur/nouveau</th>
+                            <td>300</td>
+                            <td>2</td>
+                            <td>500</td>
+                            <td>250</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+        </div>
+    </body>
+</html>

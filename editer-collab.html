@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <style>
+            .justify-content-center
+            {
+                margin: 20px;
+            }
+
+            .help-block
+            {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Collaborateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/statistiques.html">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Activité</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br/>
+
+        <br/>
+        <div class="container col-md-12">
+            <div class="row justify-content-center">
+                <div class="col-4 center" >
+
+
+                    <img src="//www.agoravox.fr/local/cache-vignettes/L309xH259/macron_deforme-daa32.jpg" alt="Smiley face" height="500" width="500"> 
+
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+
+                        <div class="col-8">
+
+                            <h1>
+                                NOM Prénom - Matricule
+                            </h1>
+                        </div>
+                        <div class="col-4">
+                                <input type="checkbox">
+                                <span>Désactiver</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Identité
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Civilité
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select class="custom-select"></select>
+                                            <span class="help-block">La civilité est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Nom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le nom est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Prénom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le prénom est obligatoire</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Date de naissance
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">La date de naissance est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Adresse
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <textarea class="form-control require"> </textarea>
+                                            <span class="help-block">L'adresse est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Numéro de sécurité social
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le numéro de sécurité social est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Téléphone
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le numéro de téléphone est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Poste
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Département
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select class="custom-select"></select>
+                                            <span class="help-block">Le département est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Nom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le nom est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Coordonnèes Bancaires
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                IBAN
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le IBAN est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                BIC
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le BIC est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="col-12">
+                        <button class="btn float-right"  data-toggle="modal" data-target="#exampleModalCenter">Sauvegarder</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                if (window.location.href.indexOf("errors") > -1) {
+                    $('.help-block').show();
+                }
+            });
+        </script>
+    </body>
+</html>
