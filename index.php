@@ -26,8 +26,8 @@ require_once 'header.html';
                             </div>
                         </div>
                         <div class="col-xl-8 col">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Voir les collaborateurs désactivés</label>
+                            <input type="checkbox" class="form-check-input" id="show-desactivated">
+                            <label class="form-check-label" for="show-desactivated">Voir les collaborateurs désactivés</label>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ require_once 'header.html';
                     <label class="float-right" for="departement">Filtrer par departement : </label>
                 </div>
                 <div class="col-4">
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="departement">
                         <option>Comptabilité</option>
                         <option>Ressources humaines</option>
                         <option>Informatique</option>
@@ -87,7 +87,7 @@ require_once 'header.html';
                                 <div class="row">
 
                                     <div class="col float-right">
-                                        <a class ="float-right" href="#">
+                                        <a class ="float-right" href="editCollab.php">
                                             <button class="float-right btn btn-warning">Modifier</button>
                                         </a>
                                     </div> 
@@ -134,7 +134,7 @@ require_once 'header.html';
                                 <div class="row">
 
                                     <div class="col float-right">
-                                        <a class ="float-right" href="#">
+                                        <a class ="float-right" href="editCollab.php">
                                             <button class="float-right btn btn-warning">Modifier</button>
                                         </a>
                                     </div> 
@@ -181,7 +181,7 @@ require_once 'header.html';
                                 <div class="row">
 
                                     <div class="col float-right">
-                                        <a class ="float-right" href="#">
+                                        <a class ="float-right" href="editCollab.php">
                                             <button class="float-right btn btn-warning">Modifier</button>
                                         </a>
                                     </div> 
@@ -228,7 +228,7 @@ require_once 'header.html';
                                 <div class="row">
 
                                     <div class="col float-right">
-                                        <a class ="float-right" href="#">
+                                        <a class ="float-right" href="editCollab.php">
                                             <button class="float-right btn btn-warning">Modifier</button>
                                         </a>
                                     </div>
