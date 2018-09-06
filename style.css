@@ -1,0 +1,13 @@
+#addCollab{
+    position: absolute;
+    top:60px;
+    right:0px;
+    margin:10px;
+}
+#titleCollab{
+    margin: 10px;
+    align-content: left;
+}
+#addCollab:after{
+    float: none;
+}
