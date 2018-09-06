@@ -23,11 +23,18 @@ $database = $firebase->getDatabase();
 $nouveauCollaborateur = $database
     ->getReference('collaborateurs')
      ->push([
+        'civilite' => $_POST['civilite'],
          'nom' => $_POST['nom'],
          'prenom' => $_POST['prenom'],
          'datenaissance' => $_POST['datenaissance'],
          'adresse' => $_POST['adresse'],
-         'numeross' => $_POST['numeross']
+         'numeross' => $_POST['numeross'],
+         'telephone' => $_POST['telephone'],
+         'departement' => $_POST['departement'],
+         'nomposte' => $_POST['nomposte'],
+         'iban' => $_POST['iban'],
+         'bic' => $_POST['bic']
+
      ]);
 
 /*$newPost->getKey();*/ // => -KVr5eu8gcTv7_AHb-3-
@@ -40,7 +47,7 @@ $nouveauCollaborateur = $database
 
 var_dump($newPost);*/
 
-$reference = $database->getReference('collaborateurs')->orderByChild('numeross')->equalTo('666');
+$reference = $database->getReference('collaborateurs')->orderByChild('prenom')->equalTo('janine');
 
 
 
