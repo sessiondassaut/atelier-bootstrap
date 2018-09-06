@@ -40,37 +40,52 @@
 	<div class="container">
 		<form>
 		  <div class="form-group row justify-content-center">
-		    <label for="inputNom" class="col-sm-2 col-form-label">Email</label>
+		    <label for="inputNom" class="col-sm-3 col-form-label">Nom</label>
 		    <div class="col-4">
-		      <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+		      <input type="text" class="form-control is-invalid" id="inputNom" placeholder="Nom" required>
+		      <div class="invalid-feedback">
+		        Le nom est obligatoire.
+		      </div>
 		    </div>
 		  </div>
 		  <div class="form-group row justify-content-center">
-		    <label for="inputPrenom" class="col-sm-2 col-form-label">Password</label>
+		    <label for="inputPrenom" class="col-sm-3 col-form-label">Prénom</label>
 		    <div class="col-4">
-		      <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
+		      <input type="text" class="form-control is-invalid" id="inputPrenom" placeholder="Prenom" required>
+		      <div class="invalid-feedback">
+		        Le prenom est obligatoire.
+		      </div>
 		    </div>
 		  </div>
 		  <div class="form-group row justify-content-center">
-		    <label for="inputBirth" class="col-sm-2 col-form-label">Date de naissance</label>
+		    <label for="inputBirth" class="col-sm-3 col-form-label">Date de naissance</label>
 		    <div class="col-4">
-		      <input type="date" class="form-control" id="inputBirth" placeholder="xx/xx/xxxx">
+		      <input type="date" class="form-control is-invalid" id="inputBirth" placeholder="xx/xx/xxxx" required>
+		      <div class="invalid-feedback">
+		        La date de naissance est obligatoire.
+		      </div>
 		    </div>
 		  </div>
 		  <div class="form-group row justify-content-center">
-		    <label for="inputNom" class="col-sm-2 col-form-label">Adresse</label>
+		    <label for="inputNom" class="col-sm-3 col-form-label">Adresse</label>
 		    <div class="col-4">
-		      <input type="text" class="form-control" id="inputAdresse" placeholder="Adresse">
+		      <input type="text" class="form-control is-invalid" id="inputAdresse" placeholder="Adresse" required>
+		      <div class="invalid-feedback">
+		        L'adresse' est obligatoire.
+		      </div>
 		    </div>
 		  </div>
 		  <div class="form-group row justify-content-center">
-		    <label for="inputNom" class="col-sm-2 col-form-label">Numéro de Sécurité Sociale</label>
+		    <label for="inputNom" class="col-sm-3 col-form-label">Numéro de Sécurité Sociale</label>
 		    <div class="col-4">
-		      <input type="number" class="form-control" id="inputNumSS" placeholder="Numéro à 13 chiffres">
+		      <input type="number" class="form-control is-invalid" id="inputNumSS" placeholder="Numéro à 13 chiffres" required>
+		      <div class="invalid-feedback">
+		        Le numéro de sécurité sociale est obligatoire.
+		      </div>
 		    </div>
 		  </div>
 		  <div class="col text-right">
-		  	<input type="submit" value="Creer" name="creer" class="btn btn-light shadow p-1 mb-1 bg-white rounded text-right">
+		  	<input type="submit" value="Creer" name="creer" class="btn btn-light shadow p-1 mb-1 bg-white rounded text-right" required>
 		  </div>
 		</form>
 	</div>
