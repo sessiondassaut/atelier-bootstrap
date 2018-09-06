@@ -19,11 +19,15 @@ $firebase = (new Factory)
 
 $database = $firebase->getDatabase();
 
- $newPost = $database
+
+$nouveauCollaborateur = $database
     ->getReference('collaborateurs')
      ->push([
-         'nom' => 'popo',
-         'telephone' => '124553'
+         'nom' => $_POST['nom'],
+         'prenom' => $_POST['prenom'],
+         'datenaissance' => $_POST['datenaissance'],
+         'adresse' => $_POST['adresse'],
+         'numeross' => $_POST['numeross']
      ]);
 
 $newPost->getKey(); // => -KVr5eu8gcTv7_AHb-3-
@@ -36,25 +40,18 @@ $newPost->getValue(); // Fetches the data from the realtime database
 
 var_dump($newPost);*/
 
-$reference = $database->getReference('collaborateurs')->orderByChild('nom')->equalTo('popo');
+$reference = $database->getReference('collaborateurs')->orderByChild('numeross')->equalTo('666');
 
-/*
-$reference = $database->getReference('collaborateurs')->orderByChild('telephone');*/
+
 
 
 
 $snapshot = $reference->getSnapshot();
 
-/*$telephone = */
+
 
 
 var_dump($snapshot);
-/*
-$answers = $snapshot->getValue();
 
-
-var_dump($answers);
-*/
-/*$newPost->remove();*/
 
 ?>
