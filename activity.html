@@ -11,11 +11,11 @@
     <title>ATB - Activités</title>
 </head>
 
-<body class="container">
+<body class="container-fluid">
     <header>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Accueil</a>
+                    <a class="nav-link" href="index.php">Collaborateurs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="statistiques.html">Statistiques</a>
@@ -26,6 +26,67 @@
             </ul>
     </header>
 
-</body>
+    <section class="container">
 
+        <div class="row">
+            <div id="header" class="col-12 col-md-9">
+                <h1>Activités</h1>
+            </div>
+        </div>
+
+        <table class="table table-hover table-sm" style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th scope="col">Chemin</th>
+                    <th scope="col">Nb de visites</th>
+                    <th scope="col">Min(ms)</th>
+                    <th scope="col">Max(ms)</th>
+                    <th scope="col">Moy.(ms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                    <td colspan="5"><div>06 Septembre 2018</div></td>
+                </tr>
+                <tr class="hiddenRow" class="accordion-body collapse" id="demo1">
+                    <td>1</td>
+                    <td>05 May 2013</td>
+                    <td>Credit Account</td>
+                    <td class="text-success">$150.00</td>
+                    <td class="text-error"></td>
+                </tr>
+
+                <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                    <td>2</td>
+                    <td>05 May 2013</td>
+                    <td>Credit Account</td>
+                    <td class="text-success">$11.00</td>
+                    <td class="text-error"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="hiddenRow"><div id="demo2" class="accordion-body collapse">Demo2</div></td>
+                </tr>
+                
+                <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+                    <td>3</td>
+                    <td>05 May 2013</td>
+                    <td>Credit Account</td>
+                    <td class="text-success">$500.00</td>
+                    <td class="text-error"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"  class="hiddenRow"><div id="demo3" class="accordion-body collapse">Demo3</div></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
 </html>
