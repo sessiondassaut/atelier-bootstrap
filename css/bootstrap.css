@@ -1,0 +1,95 @@
+.container-fluid {
+  background-color: #00FFFF;
+  width: 1200px;
+  height:20em;
+}
+
+/* Classe principale de la barre de navigation */
+.navbar-default {
+ /* Couleur de fond de la barre de navigation */
+ background-color: #F8F8F8;
+ border-color: #E7E7E7;
+}
+/* Couleur des titres affichés dans la barre */
+.navbar-default .navbar-brand {
+ color: #777;
+}
+/* Couleur utilisée lors du passage de la souris sur un titre de la barre */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+ color: #5E5E5E;
+}
+/* Couleur utilisée pour les liens */
+.navbar-default .navbar-nav > li > a {
+ color: #777;
+}
+/* Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+ color: #333;
+}
+/* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+ color: #555;
+ background-color: #E7E7E7;
+}
+
+
+.row {
+  /*
+  background-color: #DF3A01;*/
+}
+
+.form-control {
+
+}
+
+.green {
+  /*background-color: green;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.blue {
+  /*background-color: blue;*/
+}
+
+p {
+    margin-left: 20px;
+}
+.collabo {
+  font-size: x-large;
+}
+
+.yellow {
+  /*background-color: yellow;*/
+}
+
+
+.btn_submit {
+  width: 100px;
+}
+
+
+.purple {
+  /*background-color: purple;*/
+}
+
+.text_float {
+  float:right;
+  margin-right: 20px;
+}
+
+
+.col-6 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.btn {
+  float: right;
+}
