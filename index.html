@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sangle de botte</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/pafo.jpg" width="35" height="35" alt="logo"/></a>
+
+            <button class="navbar-toggler" data-target="#navigator"  data-toggle="collapse" aria-controls="navigator" aria-expanded="false" aria-label="Dérouler">
+                <!-- aria-controls: raccourci pour zone de controle additionelle -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigator">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Collaborateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activité</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+         <div class="container col">    <!-- /\Contient toute la page -->
+            <div style="padding-top: 20px; padding-bottom: 50px;">  <!-- /\Entête -->
+                <div class="col-md-4 ml-auto"> <!-- ml-auto marge gauche auto, aligne sur la droite -->
+                    <button class="btn">Ajouter un nouveau collaborateur</button>
+                </div>
+                <h1>Les collaborateurs</h1>
+                 <div class="row">
+                     <div class="col-4" style="text-align: right;">
+                        <p>Rechercher un nom ou un prénom qui commance par : </p>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn">Rechercher</button>
+                    </div>
+                    <div class="col-4">
+                        <input type="checkbox">
+                        Voir les collaborateur désactivés
+                    </div>
+                 </div>            
+                 <div class="row">
+                    <div class="col-4" style="text-align: right;" >
+                        <p>Filter par département : </p>
+                    </div>
+                     <div class="col-2">
+                        <select class="custom-select">
+                            <option>Comptabilité</option>
+                            <option>Ressource humaine</option>
+                            <option>Informatique</option>
+                        </select>
+                    </div>
+                 </div>
+             </div>
+             <div class="row">      <!-- /\Contient toutes les cartes -->
+                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Foucault</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://resize-pdm.francedimanche.ladmedia.fr/rcrop/635,500/img/2008-10/foucault-9.png" class="img-fluid rounded mx-auto d-block" alt="Smiley face"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Coffe</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://cdn-media.rtl.fr/cache/j1JPhgmNRBKIJ1AXyH6L2A/880v587-0/online/image/2016/0329/7782598916_jean-pierre-coffe-en-septembre-2012.jpg" class="img-fluid rounded mx-auto d-block" alt="Smiley face" height="175" width="175"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Foucault</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://resize-pdm.francedimanche.ladmedia.fr/rcrop/635,500/img/2008-10/foucault-9.png" class="img-fluid rounded mx-auto d-block" alt="Smiley face"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Coffe</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://cdn-media.rtl.fr/cache/j1JPhgmNRBKIJ1AXyH6L2A/880v587-0/online/image/2016/0329/7782598916_jean-pierre-coffe-en-septembre-2012.jpg" class="img-fluid rounded mx-auto d-block" alt="Smiley face" height="175" width="175"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Foucault</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://resize-pdm.francedimanche.ladmedia.fr/rcrop/635,500/img/2008-10/foucault-9.png" class="img-fluid rounded mx-auto d-block" alt="Smiley face"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-md-4 col-xs-12 col-lg-4">  <!-- /\Une carte -->
+                    <div class="card border-light">
+                        <div class="card-header" style="padding-right: 50px">Jean Pierre Coffe</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4" style="text-align: center; vertical-align: middle;">
+                                    <img src="https://cdn-media.rtl.fr/cache/j1JPhgmNRBKIJ1AXyH6L2A/880v587-0/online/image/2016/0329/7782598916_jean-pierre-coffe-en-septembre-2012.jpg" class="img-fluid rounded mx-auto d-block" alt="Smiley face" height="175" width="175"> 
+                                 </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Fonction</div>
+                                        <div class="col-md-6 col-sm-12">Jean-Pierre professionel</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Département</div>
+                                        <div class="col-md-6 col-sm-12">Général</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Email</div>
+                                        <div class="col-md-6 col-sm-12">email@adress.com</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">Téléphone</div>
+                                        <div class="col-md-6 col-sm-12">0123456789</div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-4 ml-auto">
+                                    <button class="btn">Editer</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
