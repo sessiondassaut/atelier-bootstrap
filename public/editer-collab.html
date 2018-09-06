@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modification collaborateur</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="../style/style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                if (window.location.href.indexOf("errors") > -1) {
+                    $('.help-block').show();
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Collaborateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistiques.html">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Activité</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br/>
+
+        <br/>
+        <div class="container col-md-12">
+            <div class="row justify-content-center">
+                <div class="col-4 center" >
+
+					<img src="data:image/jpeg;base64,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" alt="Photo" height="500" width="500"> 
+
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+
+                        <div class="col-8">
+
+                            <h1>
+                                NOM Prénom - Matricule
+                            </h1>
+                        </div>
+                        <div class="col-4">
+                                <input type="checkbox">
+                                <span>Désactiver</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Identité
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Civilité
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select class="custom-select"></select>
+                                            <span class="help-block">La civilité est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Nom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le nom est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Prénom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le prénom est obligatoire</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Date de naissance
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">La date de naissance est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Adresse
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <textarea class="form-control require"> </textarea>
+                                            <span class="help-block">L'adresse est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Numéro de sécurité social
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le numéro de sécurité social est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Téléphone
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le numéro de téléphone est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Poste
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Département
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select class="custom-select"></select>
+                                            <span class="help-block">Le département est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                Nom
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le nom est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Coordonnèes Bancaires
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                IBAN
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le IBAN est obligatoire</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <label class="float-right">
+                                                BIC
+                                            </label>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <input type="text" class="form-control require">
+                                            <span class="help-block">Le BIC est obligatoire</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="col-12">
+                        <button class="btn float-right"  data-toggle="modal" data-target="#exampleModalCenter">Sauvegarder</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>  
+    </body>
+</html>
