@@ -7,9 +7,10 @@
 	scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<title> Bootsrap </title>
 </head>
@@ -83,12 +84,17 @@
 		        Le numéro de sécurité sociale est obligatoire.
 		      </div>
 		    </div>
-		  </div>
-
-
-		<!-- modal -->
-		<!-- Button trigger modal -->
-		  <button type="button" class="btn btn-light shadow p-1 mb-1 bg-white rounded text-right" data-toggle="modal" data-target="#creerCollabModalCenter">Creer</button>
+		     </div>
+		
+		  <!-- modal -->
+		  <!-- Button trigger modal -->
+		 	<div class="form-group row justify-content-right">
+		  		<div class="col text-right">
+		  			<button type="submit" class="btn btn-light shadow p-1 mb-1 bg-white rounded " data-toggle="modal" data-target="#creerCollabModalCenter">Creer</button>
+		  		</div>
+		  	</div>
+		 
+			</form>
 
 			<!-- Modal -->
 			<div class="modal fade" id="creerCollabModalCenter" tabindex="-1" role="dialog" aria-labelledby="creerCollabModalCenterTitle" aria-hidden="true">
@@ -100,13 +106,13 @@
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
-			      <div class="modal-body">
+			      <div class="modal-body justify-content">
 			        <p class="card-infos">Vous êtes sur le point de créer un nouveau collaborateur :</p>
-			        <p class="card-infos">Nom</p>
-					<p class="card-infos">Prenom</p>
-					<p class="card-infos">Date de naissance</p>
-					<p class="card-infos">Adresse</p>
-					<p class="card-infos">Numéro de Sécurité Sociale</p>
+			        <p class="card-infos">Nom  					_____________________</p>
+					<p class="card-infos">Prenom 				_____________________</p>
+					<p class="card-infos">Date de naissance 	_____________________</p>
+					<p class="card-infos">Adresse 				_____________________</p>
+					<p class="card-infos">Numéro de Sécurité Sociale_________________</p>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
@@ -117,13 +123,14 @@
 			</div>
 
 		  </div>
-		</form>
+	
 
 	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 	
-	<script type="text/javascript">
-	('#myModal').on('shown.bs.modal', function () {$('#myInput').trigger('focus')})
-	</script>
 
 </body>
 </html>
