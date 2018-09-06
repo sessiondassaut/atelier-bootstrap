@@ -1,0 +1,12 @@
+{
+    "name": "diginamic08/app",
+    "require": {
+        "kreait/firebase-php": "^4.16"
+    },
+    "authors": [
+        {
+            "name": "Rémy Marronnier",
+            "email": "rmarronnier@gmail.com"
+        }
+    ]
+}
