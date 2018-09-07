@@ -1,0 +1,64 @@
+.container-fluid {
+  background-color: #00FFFF;
+  width: 1200px;
+  height:20em;
+}
+
+
+
+.row {
+  /*
+  background-color: #DF3A01;*/
+}
+
+.form-control {
+
+}
+
+.green {
+  /*background-color: green;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.blue {
+  /*background-color: blue;*/
+}
+
+p {
+    margin-left: 20px;
+}
+.collabo {
+  font-size: x-large;
+}
+
+.yellow {
+  /*background-color: yellow;*/
+}
+
+
+.btn_submit {
+  width: 100px;
+}
+
+
+.purple {
+  /*background-color: purple;*/
+}
+
+.text_float {
+  float:right;
+  margin-right: 20px;
+}
+
+
+.col-6 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.btn {
+  float: right;
+}

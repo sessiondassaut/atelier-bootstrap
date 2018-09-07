@@ -1,0 +1,39 @@
+.container-fluid {
+  background-color: #00FFFF;
+  width: 1200px;
+  height:20em;
+}
+
+.col-4 {
+  margin-top: 20px;
+}
+
+.col-3 {
+  margin-bottom: 20px;
+}
+
+.col-6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+input {
+  margin-left: 20px;
+}
+
+.collabo {
+  font-size: xx-large;
+}
+
+.btn {
+  float:right;
+  width: 80px;
+}
