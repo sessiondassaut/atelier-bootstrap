@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-
+    scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Ajout collaborateur</title>
+</head>
+
+<body class="container-fluid">
+
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Collaborateurs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="statistiques.html">Statistiques</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="activity.html">Activités</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="container">
+
+        <div id="header" class="col-12">
+            <h1>Ajouter un collaborateur</h1>
+        </div>
+
+        <form class="needs-validation" novalidate>
+            
+            <div class="form-row">
+
+                <div class="col-12 col-md-8">
+                    <div class="form-row">
+                        <div class="col-12 col-sm-5">
+                            <label for="validationCustom01">Nom</label>
+                        </div>
+                        <div align=right class="col-12 col-sm-7">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nom" required>
+                            <div class="invalid-feedback">
+                                Vous devez spécifier un nom.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="col-12 col-sm-5">
+                            <label for="validationCustom02">Prénom</label>
+                        </div>
+                        <div align=right class="col-12 col-sm-7">
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Prénom" required>
+                            <div class="invalid-feedback">
+                                Vous devez spécifier un prénom.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="col-12 col-sm-5">
+                            <label for="validationCustom03">Date de naissance</label>
+                        </div>
+                        <div align=right class="col-12 col-sm-7">
+                            <input type="date" class="form-control" id="validationCustom03" placeholder="Date de naissance" min="1900-01-01" max="2000-01-01" required>
+                            <div class="invalid-feedback">
+                                Vous devez spécifier une date de naissance valide.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-12 col-sm-5">
+                            <label for="validationCustom04">Adresse</label>
+                        </div>
+                        <div align=right class="col-12 col-sm-7">
+                            <textarea class="form-control" id="validationCustom04" rows="5" required></textarea>
+                            <div class="invalid-feedback">
+                                Vous devez spécifier une adresse.
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+                <div class="col-12 col-md-4">
+                    <div class="form-row">
+                        <img src="../portraits/default.png" class="img-thumbnail" alt="Responsive image" width="260">
+                    </div>
+                    <div class="form-row">
+                        <label for="exampleFormControlFile1">Vous pouvez importer un portrait.</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+    
+            </div>
+            <div class="form-row">
+                <div align=right class="col-12">
+                    <a class="link_button" href="index.php" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Retour</a>
+                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#addCollabModal">Créer profil</button>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- shamelessly taken from bootstrap website -->
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+            })();
+        </script>
+
+            <!-- Modal -->
+            <div class="modal fade" id="addCollabModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Création d'un collaborateur</h3>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Vous êtes sur le point de créer un collaborateur</h5>
+                                    <em>Les données entrées ne s'affichent pas car j'ai aucune idée comment faire et je connais pas JS</em>
+                                </div>
+                            </div>
+                            <div class="row">
+                                Nom :
+                            </div>
+                            <div class="row">
+                                Prénom :
+                            </div>
+                            <div class="row">
+                                Date de Naissance :
+                            </div>
+                            <div class="row">
+                                Adresse :
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
